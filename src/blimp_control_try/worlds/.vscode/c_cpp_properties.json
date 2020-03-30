@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/cerlab/Anish/devel/include/**",
+                "/home/cerlab/depowdering/devel/include/**",
+                "/opt/ros/kinetic/include/**",
+                "/home/cerlab/depowdering/src/denso_robot_ros/bcap_core/include/**",
+                "/home/cerlab/depowdering/src/denso_robot_ros/bcap_service/include/**",
+                "/home/cerlab/Anish/src/blimp_control_try/include/**",
+                "/home/cerlab/depowdering/src/ddynamic_reconfigure-kinetic-devel/include/**",
+                "/home/cerlab/depowdering/src/denso_robot_ros/denso_robot_control/include/**",
+                "/home/cerlab/depowdering/src/denso_robot_ros/denso_robot_core/include/**",
+                "/home/cerlab/depowdering/src/realsense-ros/realsense2_camera/include/**",
+                "/home/cerlab/depowdering/src/realsense_gazebo_plugin/include/**",
+                "/home/cerlab/Anish/src/rosserial/rosserial_server/include/**",
+                "/home/cerlab/Anish/src/rosserial/rosserial_test/include/**",
+                "/usr/include/**"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}

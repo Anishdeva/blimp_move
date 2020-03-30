@@ -1,0 +1,8 @@
+prefix=/home/cerlab/blimp_move/devel
+
+Name: blimp_control_try
+Description: Description of blimp_control_try
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp gazebo_ros

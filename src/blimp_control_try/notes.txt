@@ -1,0 +1,5 @@
+Aspect Ratio
+Change ID resolution- 15,72,<100
+Light Source - Change position and increase range 10 fold
+Blender and Gimp (manipulating images)
+UV image map- On Blender; Gimp- open UV image map and attach AR marker- Import to Blender.

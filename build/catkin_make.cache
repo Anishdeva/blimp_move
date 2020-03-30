@@ -1,0 +1,2 @@
+blimp_control_try:blimp_localization
+-DCATKIN_DEVEL_PREFIX=/home/cerlab/blimp_move/devel -DCMAKE_INSTALL_PREFIX=/home/cerlab/blimp_move/install -G Unix Makefiles

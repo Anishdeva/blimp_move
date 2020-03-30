@@ -1,0 +1,43 @@
+<launch>
+    <!-- marker_size in cm  default=20,0.02,0.02-->
+    <arg name="marker_size" default="9" />
+    <arg name="max_new_marker_error" default="0.1" />
+    <arg name="max_track_error" default="0.01" />
+
+    <arg name="camera_node_name" default="camera_3" />
+    <arg name="camera_frame_id" default="$(arg camera_node_name)" />
+    <arg name="image_width" default="640" />
+    <arg name="image_height" default="480" />
+    
+    <!--<arg name="cam_image_topic" default="/$(arg camera_node_name)/image_raw" />-->
+    <arg name="cam_info_topic" default="/$(arg camera_node_name)/camera_info" />
+    <arg name="output_frame" default="$(arg camera_node_name)" />
+
+
+    <!-- camera_frame_id must match the calibration filename pointed by calib_url -->
+    <arg name="calib_url" default="file://$(env HOME)/.ros/camera_info/$(arg camera_frame_id).yaml" />
+    <arg name="video_device" default="/dev/video0"/>
+
+
+
+
+
+    <node
+
+        pkg="ar_track_alvar"
+        type="individualMarkersNoKinect"
+        name="$(arg camera_node_name)_tracker"
+        respawn="true"
+        output="screen">
+
+        <param name="marker_size"           type="double" value="$(arg marker_size)" />
+        <param name="max_new_marker_error"  type="double" value="$(arg max_new_marker_error)" />
+        <param name="max_track_error"       type="double" value="$(arg max_track_error)" />
+        <param name="output_frame"          type="string" value="$(arg output_frame)" />
+
+        <remap from="camera_image" to="camera_3/image_raw"/>
+        <remap from="camera_info" to="camera_3/camera_info"/>
+        <remap from="ar_pose_marker" to="$(arg camera_node_name)/ar_pose_marker"/>
+
+    </node>
+</launch>
