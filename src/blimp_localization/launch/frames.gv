@@ -1,0 +1,10 @@
+digraph G {
+"world" -> "camera_0"[label="Broadcaster: /world2static_3\nAverage rate: 92.776 Hz\nMost recent transform: 10734.148 ( -0.006 sec old)\nBuffer length: 4.333 sec\n"];
+"world" -> "camera_2"[label="Broadcaster: /world2static_5\nAverage rate: 92.283 Hz\nMost recent transform: 10734.148 ( -0.006 sec old)\nBuffer length: 4.302 sec\n"];
+"world" -> "camera_1"[label="Broadcaster: /world2static_4\nAverage rate: 92.774 Hz\nMost recent transform: 10734.148 ( -0.006 sec old)\nBuffer length: 4.290 sec\n"];
+"camera_2" -> "ar_marker_255"[label="Broadcaster: /camera_2_tracker\nAverage rate: 8.264 Hz\nMost recent transform: 10733.971 ( 0.171 sec old)\nBuffer length: 4.235 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 10734.142"[ shape=plaintext ] ;
+ }->"world";
+}

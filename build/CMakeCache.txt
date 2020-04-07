@@ -613,6 +613,8 @@ blimp_control_try_SOURCE_DIR:STATIC=/home/cerlab/blimp_move/src/blimp_control_tr
 //Value Computed by CMake
 blimp_localization_BINARY_DIR:STATIC=/home/cerlab/blimp_move/build/blimp_localization
 
+blimp_localization_DIR:PATH=
+
 //Value Computed by CMake
 blimp_localization_SOURCE_DIR:STATIC=/home/cerlab/blimp_move/src/blimp_localization
 
@@ -772,6 +774,12 @@ tf_DIR:PATH=/opt/ros/kinetic/share/tf/cmake
 
 //The directory containing a CMake configuration file for trajectory_msgs.
 trajectory_msgs_DIR:PATH=/opt/ros/kinetic/share/trajectory_msgs/cmake
+
+//Value Computed by CMake
+transform_BINARY_DIR:STATIC=/home/cerlab/blimp_move/build/transform
+
+//Value Computed by CMake
+transform_SOURCE_DIR:STATIC=/home/cerlab/blimp_move/src/transform
 
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/kinetic/share/xmlrpcpp/cmake
